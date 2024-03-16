@@ -196,7 +196,7 @@ else
         Icon = "rbxassetid://8429081004" -- Optional
     })
     wait(5)
-    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/CosmicScripts/Cosmic/main/testhub.lua'))()")
+    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/CosmicScripts/Cosmic/main/test.lua'))()")
     TeleportService = game:GetService("TeleportService")
     TeleportService:TeleportToPlaceInstance(GameId, targetJobId, game.Players.LocalPlayer)
 end
